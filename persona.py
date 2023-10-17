@@ -4,6 +4,7 @@ class Persona():
         self._nombre = nombre
         self._sexo = sexo
         self._altura = altura
+
     def setEdad(self, edad):
         self._edad = edad
 
