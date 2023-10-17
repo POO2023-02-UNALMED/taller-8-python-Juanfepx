@@ -12,7 +12,8 @@ class Futbolista(Deportista):
         Futbolista._listaFutbolistas.append(self)
 
     def __str__(self):
-        cadena = "Mi nombre es " + self.getNombre() + " soy profesional en el deporte " + self.getDeporte() + " Tengo " + self.getEdad() + " años de edad y llevo " + self._añosPracticando + " años en el deporte"
+        cadena = "Mi nombre es " + self.getNombre() + " soy profesional en el deporte " + self.getDeporte() + " Tengo " + str(
+            self.getEdad()) + " años de edad y llevo " + str(self._añosPracticando) + " años en el deporte"
 
     def setTarjetasRojas(self, tarjetas):
         self._tarjetasRojas = tarjetas
